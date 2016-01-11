@@ -77,11 +77,3 @@ function animate(){
   }, 250)
 
 }
-
-
-$(document).ready(function(){
-
-
-  animate();
-
-})
