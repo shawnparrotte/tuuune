@@ -74,7 +74,7 @@ function animate(){
     }
 
 
-  }, 125)
+  }, 250)
 
 }
 
