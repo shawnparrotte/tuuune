@@ -5,10 +5,15 @@ var direction = "upward";
 var direction2 = "upward";
 var go = false;
 createjs.Sound.registerSound("Body.mp3", "Body");
-var bdy = createjs.Sound.createInstance("Body");
+createjs.Sound.addEventListener("fileload", handleFileLoad);
+
+function handleFileLoad(event){
+  console.log(event)
+}
 
 function animate(){
 
+  bdy.play({loop : -1})
 
   var makeitgo = setInterval(function(){
 
@@ -76,7 +81,6 @@ function animate(){
 
 $(document).ready(function(){
 
-  bdy.play({loop : -1})
 
   animate();
 
