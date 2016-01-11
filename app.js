@@ -7,8 +7,6 @@ var go = false;
 
 function animate(){
 
-  var ppc = new createjs.PlayPropsConfig().set({loop: -1, volume: 0.7});
-  createjs.Sound.play("Body", ppc);
 
   var makeitgo = setInterval(function(){
 
@@ -77,6 +75,8 @@ function animate(){
 $(document).ready(function(){
 
   createjs.Sound.registerSound("Body.mp3", "Body");
+  var bdy = createjs.Sound.createInstance("Body");
+  bdy.play({loop : -1})
 
   animate();
 
