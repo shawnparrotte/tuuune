@@ -7,6 +7,9 @@ var go = false;
 
 function animate(){
 
+  var ppc = new createjs.PlayPropsConfig().set({loop: -1, volume: 0.7});
+  createjs.Sound.play("Body", ppc);
+
   var makeitgo = setInterval(function(){
 
     var to = "#container div:nth-child(" + counter + ")";
@@ -74,8 +77,6 @@ function animate(){
 $(document).ready(function(){
 
   createjs.Sound.registerSound("Body.mp3", "Body");
-  var ppc = new createjs.PlayPropsConfig().set({loop: -1, volume: 0.7});
-  createjs.Sound.play("Body");
 
   animate();
 
