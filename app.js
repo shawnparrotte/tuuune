@@ -4,6 +4,8 @@ var counter2 = 0;
 var direction = "upward";
 var direction2 = "upward";
 var go = false;
+createjs.Sound.registerSound("Body.mp3", "Body");
+var bdy = createjs.Sound.createInstance("Body");
 
 function animate(){
 
@@ -74,8 +76,6 @@ function animate(){
 
 $(document).ready(function(){
 
-  createjs.Sound.registerSound("Body.mp3", "Body");
-  var bdy = createjs.Sound.createInstance("Body");
   bdy.play({loop : -1})
 
   animate();
