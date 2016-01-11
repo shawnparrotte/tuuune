@@ -75,7 +75,7 @@ $(document).ready(function(){
 
   createjs.Sound.registerSound("Body.mp3", "Body");
   var ppc = new createjs.PlayPropsConfig().set({loop: -1, volume: 0.7});
-  createjs.Sound.play("Body", ppc);
+  createjs.Sound.play("Body");
 
   animate();
 
