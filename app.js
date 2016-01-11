@@ -9,11 +9,11 @@ createjs.Sound.addEventListener("fileload", handleFileLoad);
 
 function handleFileLoad(event){
   console.log(event)
+  createjs.Sound.play(event.id, {loop:-1});
+  animate();
 }
 
 function animate(){
-
-  bdy.play({loop : -1})
 
   var makeitgo = setInterval(function(){
 
