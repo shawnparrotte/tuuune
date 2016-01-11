@@ -1,0 +1,41 @@
+
+#master-container {
+  display: flex;
+}
+
+#container {
+  display: flex;
+  justify-content: space-around;
+  width: 50vw;
+}
+
+#container-2 {
+  display: flex;
+  justify-content: space-around;
+  width: 50vw;
+}
+
+.v-center {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.box {
+  height: 4vw;
+  width: 4vw;
+  border-radius: 50px;
+  background-color: blue;
+  transition: transform 1.5s, background-color 1.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.up {
+  transform: translateY(-40vh);
+  background-color: yellow;
+}
+.down {
+  transform: translateY(40vh);
+  background-color: blue;
+}
